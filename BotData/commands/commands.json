@@ -1,0 +1,179 @@
+{
+  "command": [
+    {
+      "name": "help",
+      "actions": [
+        {
+          "name": "help menu",
+          "category": "Message",
+          "type": "Send Embed",
+          "fields": [
+            {
+              "name": "!help",
+              "value": "Shows this menu",
+              "inline": "true"
+            },
+            {
+              "name": "!info",
+              "value": "Shows some info",
+              "inline": "true"
+            },
+            {
+              "name": "!social",
+              "value": "Shows social media ",
+              "inline": "true"
+            },
+            {
+              "name": "!react",
+              "value": "...",
+              "inline": "true"
+            },
+            {
+              "name": "!protection",
+              "value": "",
+              "inline": "true"
+            }
+          ],
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "1FFF57",
+          "title": "Help Menu",
+          "url": "",
+          "authorname": "Nft Bot",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "This is the embed description, replace this with some info about your bot!",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "info",
+      "actions": [
+        {
+          "name": "Infos",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "19C2FF",
+          "title": "Infos",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "This bot was made by NftMorph#01877 if you want to know information or buy any bot send him a message",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "react",
+      "actions": [
+        {
+          "name": "reaction menu",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "FFFFFF",
+          "title": "hghghghghg",
+          "url": "",
+          "authorname": "hghghg",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "sdgffdgdfgfdghdfghkfgnhjgf",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "reactionmenu",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "listener",
+          "category": "Reaction",
+          "type": "Add Reaction Listener",
+          "reactionActions": {
+            "✔️": [
+              {
+                "name": "Verified",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.reactionuser.id}",
+                "rolename": "Verified"
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "message": "${tempVars.reactionmenu.id}",
+          "duration": "0",
+          "reactionemoji": "reactionemoji",
+          "reactionuser": "reactionuser",
+          "react": "BOOL_TRUE@@"
+        }
+      ]
+    },
+    {
+      "name": "social",
+      "actions": [
+        {
+          "name": "social menu",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "1259FF",
+          "title": "... OFFICIAL LINKS",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "These are the official ..links. These are the only legitimate links for our Twitter, OpenSea, etc. Do not trust any other links. Always refer to this page if you're trying to access official .. resources.\n\n🐦 Twitter:\n🌊 OpenSea:\n🌐 Website:",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "protection",
+      "actions": [
+        {
+          "name": "Protection",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "2E17FF",
+          "title": "Safety Tips",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "❌️ THE TEAM WILL NEVER DM YOU FIRST\n\n❌️ DO NOT CLICK ON ANY SUSPICIOUS LINKS IN CHAT OR DMS\n\n❌️ NEVER SHOW ANYONE OR TYPE YOUR SEED PHRASE ANYWHERE\n\n❌️ ANYONE TRYING TO TRADE NFTS THROUGH DMS IS MOST LIKELY A SCAM\n\n⚠️TURN OFF YOUR DMS ⚠️\n\nHow to turn off DMs:\n1️⃣ Go to the top of the server and click the drop down menu.\n\n2️⃣ Disable the ability to receive direct messages from server members.\n\n🫂 Please help keep each other safe and report any scammers! Have a safe journey",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    }
+  ]
+}

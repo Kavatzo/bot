@@ -1,0 +1,479 @@
+{
+  "nodes": [
+    {
+      "type": "command",
+      "name": "help",
+      "guid": "7942fe4c-dffa-4146-8cab-d254b3d80d5d",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "37eda463-a170-44f9-af54-61378ffc9294"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 6,
+      "y": 71
+    },
+    {
+      "type": "command",
+      "name": "info",
+      "guid": "2224944a-561a-4fa1-824b-2f31ea37c836",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "4ceb4b78-c5fc-444c-9b6a-d5793a5d95f4"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 9,
+      "y": 196
+    },
+    {
+      "type": "response",
+      "name": "help menu",
+      "guid": "37eda463-a170-44f9-af54-61378ffc9294",
+      "reactionFields": [],
+      "embedfields": [
+        {
+          "name": "!help",
+          "value": "Shows this menu",
+          "inline": "true"
+        },
+        {
+          "name": "!info",
+          "value": "Shows some info",
+          "inline": "true"
+        },
+        {
+          "name": "!social",
+          "value": "Shows social media ",
+          "inline": "true"
+        },
+        {
+          "name": "!react",
+          "value": "...",
+          "inline": "true"
+        },
+        {
+          "name": "!protection",
+          "value": "",
+          "inline": "true"
+        }
+      ],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7942fe4c-dffa-4146-8cab-d254b3d80d5d"
+        }
+      ],
+      "x": 181,
+      "y": 43,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "1FFF57",
+        "Help Menu",
+        "",
+        "Nft Bot",
+        "",
+        "",
+        "This is the embed description, replace this with some info about your bot!",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "Infos",
+      "guid": "4ceb4b78-c5fc-444c-9b6a-d5793a5d95f4",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "2224944a-561a-4fa1-824b-2f31ea37c836"
+        }
+      ],
+      "x": 181,
+      "y": 167,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "19C2FF",
+        "Infos",
+        "",
+        "",
+        "",
+        "",
+        "This bot was made by NftMorph#01877 if you want to know information or buy any bot send him a message",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "react",
+      "guid": "8704ca6f-df74-4734-a495-5fcbbcaeb3b1",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "e1f1dcf9-6f5f-4db9-a068-722c519e33df"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 7,
+      "y": 576
+    },
+    {
+      "type": "response",
+      "name": "reaction menu",
+      "guid": "e1f1dcf9-6f5f-4db9-a068-722c519e33df",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "reactionmenu",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "89942e76-961c-4017-9b1d-79913aeef73d"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8704ca6f-df74-4734-a495-5fcbbcaeb3b1"
+        }
+      ],
+      "x": 179,
+      "y": 545,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "FFFFFF",
+        "hghghghghg",
+        "",
+        "hghghg",
+        "",
+        "",
+        "sdgffdgdfgfdghdfghkfgnhjgf",
+        "",
+        "",
+        "",
+        "false",
+        "reactionmenu",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "listener",
+      "guid": "89942e76-961c-4017-9b1d-79913aeef73d",
+      "reactionFields": [
+        "✔️"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "✔️",
+          "connections": [
+            "2b73921e-301d-413a-9b64-9f65d292c011"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "e1f1dcf9-6f5f-4db9-a068-722c519e33df"
+        }
+      ],
+      "x": 351,
+      "y": 545,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${tempVars.reactionmenu.id}",
+        "0",
+        "reactionemoji",
+        "reactionuser",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "Verified",
+      "guid": "2b73921e-301d-413a-9b64-9f65d292c011",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "89942e76-961c-4017-9b1d-79913aeef73d"
+        }
+      ],
+      "x": 526,
+      "y": 551,
+      "rtype": "User Action",
+      "rsubtype": "Add Role to User",
+      "formdata": [
+        "${tempVars.reactionuser.id}",
+        "Verified"
+      ],
+      "formnames": [
+        "user",
+        "roleName"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "social",
+      "guid": "47a4bbda-4bbd-4610-8734-5e45a817193b",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "07295a93-86fb-4585-87a7-9e6bc754226c"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 6,
+      "y": 321
+    },
+    {
+      "type": "response",
+      "name": "social menu",
+      "guid": "07295a93-86fb-4585-87a7-9e6bc754226c",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "47a4bbda-4bbd-4610-8734-5e45a817193b"
+        }
+      ],
+      "x": 181,
+      "y": 287,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "1259FF",
+        "... OFFICIAL LINKS",
+        "",
+        "",
+        "",
+        "",
+        "These are the official ..links. These are the only legitimate links for our Twitter, OpenSea, etc. Do not trust any other links. Always refer to this page if you're trying to access official .. resources.\n\n🐦 Twitter:\n🌊 OpenSea:\n🌐 Website:",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "protection",
+      "guid": "19387de5-a58a-48d8-8952-68f6942a16fc",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "08741830-dd90-4149-88c4-307e25184131"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 1,
+      "y": 439
+    },
+    {
+      "type": "response",
+      "name": "Protection",
+      "guid": "08741830-dd90-4149-88c4-307e25184131",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "19387de5-a58a-48d8-8952-68f6942a16fc"
+        }
+      ],
+      "x": 182,
+      "y": 404,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "2E17FF",
+        "Safety Tips",
+        "",
+        "",
+        "",
+        "",
+        "❌️ THE TEAM WILL NEVER DM YOU FIRST\n\n❌️ DO NOT CLICK ON ANY SUSPICIOUS LINKS IN CHAT OR DMS\n\n❌️ NEVER SHOW ANYONE OR TYPE YOUR SEED PHRASE ANYWHERE\n\n❌️ ANYONE TRYING TO TRADE NFTS THROUGH DMS IS MOST LIKELY A SCAM\n\n⚠️TURN OFF YOUR DMS ⚠️\n\nHow to turn off DMs:\n1️⃣ Go to the top of the server and click the drop down menu.\n\n2️⃣ Disable the ability to receive direct messages from server members.\n\n🫂 Please help keep each other safe and report any scammers! Have a safe journey",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    }
+  ]
+}
